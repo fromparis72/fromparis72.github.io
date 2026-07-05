@@ -67,15 +67,18 @@
       gap: 12px;
     }
     a.link {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 14px;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 14px;
-      padding: 16px 20px;
+      padding: 14px 18px;
       text-decoration: none;
       color: var(--text);
       font-size: 16px;
       font-weight: 500;
+      text-align: left;
       transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
     }
     a.link:hover {
@@ -83,12 +86,28 @@
       transform: translateY(-2px);
       box-shadow: 0 6px 18px rgba(0,0,0,0.06);
     }
+    a.link .logo-wrap {
+      width: 46px;
+      height: 32px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    a.link img.favicon {
+      max-width: 46px;
+      max-height: 32px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+    a.link .label { display: flex; flex-direction: column; }
     a.link .sub {
-      display: block;
       font-size: 13px;
       color: var(--muted);
       font-weight: 400;
-      margin-top: 3px;
+      margin-top: 2px;
     }
     footer {
       margin-top: 40px;
@@ -119,33 +138,48 @@
 
     <nav class="links">
       <!-- ================================================= -->
-      <!--  Remplace href="#" par tes URLs et édite le texte  -->
-      <!--  Duplique/supprime des blocs <a> selon tes besoins -->
+      <!--  Pour éditer : change l'URL (href), le titre et la  -->
+      <!--  ligne <span class="sub"> sous chaque lien.         -->
       <!-- ================================================= -->
 
-      <a class="link" href="#" target="_blank" rel="noopener">
-        Mon site principal
-        <span class="sub">exemple.com</span>
+      <a class="link" href="https://www.eyeshot.fr" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://www.eyeshot.fr/assets/images/logo-e-100x101.png" alt="Eyeshot" loading="lazy"></span>
+        <span class="label">Eyeshot<span class="sub">eyeshot.fr</span></span>
       </a>
 
-      <a class="link" href="#" target="_blank" rel="noopener">
-        Mon blog
-        <span class="sub">blog.exemple.com</span>
+      <a class="link" href="https://www.b2bvenues.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://www.b2bvenues.com/assets/images/logo.png" alt="B2B Venues" loading="lazy"></span>
+        <span class="label">B2B Venues<span class="sub">b2bvenues.com</span></span>
       </a>
 
-      <a class="link" href="#" target="_blank" rel="noopener">
-        Mon portfolio
-        <span class="sub">portfolio.exemple.com</span>
+      <a class="link" href="https://www.stay-with-bailey.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://www.stay-with-bailey.com/images/logo_bailey.jpg" alt="Stay with Bailey" loading="lazy"></span>
+        <span class="label">Stay with Bailey<span class="sub">stay-with-bailey.com</span></span>
       </a>
 
-      <a class="link" href="#" target="_blank" rel="noopener">
-        Ma boutique
-        <span class="sub">boutique.exemple.com</span>
+      <a class="link" href="https://www.decryptage-tech.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://decryptage-tech.com/content/images/2026/06/logo-final-decryptage-lite.png" alt="Décryptage Tech" loading="lazy"></span>
+        <span class="label">Décryptage Tech<span class="sub">decryptage-tech.com</span></span>
       </a>
 
-      <a class="link" href="#" target="_blank" rel="noopener">
-        LinkedIn
-        <span class="sub">linkedin.com/in/…</span>
+      <a class="link" href="https://www.domatch.fr" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://domatch.fr/logo.png" alt="Domatch" loading="lazy"></span>
+        <span class="label">Domatch<span class="sub">domatch.fr</span></span>
+      </a>
+
+      <a class="link" href="https://www.alerte-canicule.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://alerte-canicule.com/favicon.svg" alt="Alerte Canicule" loading="lazy"></span>
+        <span class="label">Alerte Canicule<span class="sub">alerte-canicule.com</span></span>
+      </a>
+
+      <a class="link" href="https://www.lechienvoyageur.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://lechienvoyageur.com/images/lechienvoyageur_slogan_services.png" alt="Le Chien Voyageur" loading="lazy"></span>
+        <span class="label">Le Chien Voyageur<span class="sub">lechienvoyageur.com</span></span>
+      </a>
+
+      <a class="link" href="https://www.mydogcanfly.com" target="_blank" rel="noopener">
+        <span class="logo-wrap"><img class="favicon" src="https://mydogcanfly.com/images/apple-touch-icon.png" alt="My Dog Can Fly" loading="lazy"></span>
+        <span class="label">My Dog Can Fly<span class="sub">mydogcanfly.com</span></span>
       </a>
     </nav>
 
