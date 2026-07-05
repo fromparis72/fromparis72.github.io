@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mes liens — Philippe</title>
+  <meta name="description" content="Tous mes sites au même endroit." />
+
+  <!-- ============================================= -->
+  <!--  PERSONNALISE ICI : titre, sous-titre, liens  -->
+  <!-- ============================================= -->
+
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --card: #ffffff;
+      --text: #1a1a1a;
+      --muted: #6b6b6b;
+      --border: #e5e5e0;
+      --hover: #f0f0ec;
+      --accent: #1a1a1a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 64px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      width: 100%;
+      max-width: 480px;
+      text-align: center;
+    }
+    .avatar {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: 600;
+      margin: 0 auto 20px;
+      letter-spacing: 1px;
+    }
+    h1 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 36px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    a.link {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 16px;
+      font-weight: 500;
+      transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+    }
+    a.link:hover {
+      background: var(--hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    }
+    a.link .sub {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 400;
+      margin-top: 3px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101010;
+        --card: #1b1b1b;
+        --text: #f2f2f2;
+        --muted: #9a9a9a;
+        --border: #2c2c2c;
+        --hover: #242424;
+        --accent: #f2f2f2;
+      }
+      .avatar { color: #101010; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <!-- Initiales ou remplace par une image : <img src="photo.jpg" class="avatar"> -->
+    <div class="avatar">P</div>
+
+    <h1>Philippe</h1>
+    <p class="tagline">Tous mes sites au même endroit</p>
+
+    <nav class="links">
+      <!-- ================================================= -->
+      <!--  Remplace href="#" par tes URLs et édite le texte  -->
+      <!--  Duplique/supprime des blocs <a> selon tes besoins -->
+      <!-- ================================================= -->
+
+      <a class="link" href="#" target="_blank" rel="noopener">
+        Mon site principal
+        <span class="sub">exemple.com</span>
+      </a>
+
+      <a class="link" href="#" target="_blank" rel="noopener">
+        Mon blog
+        <span class="sub">blog.exemple.com</span>
+      </a>
+
+      <a class="link" href="#" target="_blank" rel="noopener">
+        Mon portfolio
+        <span class="sub">portfolio.exemple.com</span>
+      </a>
+
+      <a class="link" href="#" target="_blank" rel="noopener">
+        Ma boutique
+        <span class="sub">boutique.exemple.com</span>
+      </a>
+
+      <a class="link" href="#" target="_blank" rel="noopener">
+        LinkedIn
+        <span class="sub">linkedin.com/in/…</span>
+      </a>
+    </nav>
+
+    <footer>© 2026 Philippe</footer>
+  </main>
+</body>
+</html>
