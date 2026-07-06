@@ -34,7 +34,7 @@
     }
     .container {
       width: 100%;
-      max-width: 480px;
+      max-width: 600px;
       text-align: center;
     }
     .avatar {
@@ -61,17 +61,34 @@
       font-size: 15px;
       margin-bottom: 36px;
     }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
+    .group { margin-bottom: 26px; }
+    .group-title {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      color: var(--muted);
+      text-align: left;
+      margin: 0 0 12px 4px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 460px) {
+      .row { grid-template-columns: 1fr; }
     }
     a.link {
-      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: #ffffff;
       border: 1px solid #e6e6e1;
       border-radius: 16px;
-      padding: 20px 22px;
+      padding: 22px 18px;
+      min-height: 118px;
       text-decoration: none;
       text-align: center;
       transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
@@ -84,8 +101,8 @@
     a.link img.logo {
       display: block;
       margin: 0 auto;
-      max-width: 84%;
-      max-height: 62px;
+      max-width: 88%;
+      max-height: 56px;
       width: auto;
       height: auto;
       object-fit: contain;
@@ -124,52 +141,68 @@
     <h1>Philippe</h1>
     <p class="tagline">Tous mes sites au même endroit</p>
 
-    <nav class="links">
+    <div class="groups">
       <!-- ================================================= -->
-      <!--  Pour éditer : change l'URL (href), le titre et la  -->
-      <!--  ligne <span class="sub"> sous chaque lien.         -->
+      <!--  Grille 2 colonnes, regroupée par thème.           -->
+      <!--  Pour éditer : change href / src / le texte .sub.  -->
       <!-- ================================================= -->
 
-      <a class="link" href="https://www.eyeshot.fr" target="_blank" rel="noopener">
-        <img class="logo" src="eyeshot.png" alt="Eyeshot" loading="lazy">
-        <span class="sub">eyeshot.fr</span>
-      </a>
+      <section class="group">
+        <h2 class="group-title">Événementiel &amp; audiovisuel</h2>
+        <div class="row">
+          <a class="link" href="https://www.eyeshot.fr" target="_blank" rel="noopener">
+            <img class="logo" src="eyeshot.png" alt="Eyeshot" loading="lazy">
+            <span class="sub">eyeshot.fr</span>
+          </a>
+          <a class="link" href="https://www.b2bvenues.com" target="_blank" rel="noopener">
+            <img class="logo" src="b2bvenues.png" alt="B2B Venues" loading="lazy">
+            <span class="sub">b2bvenues.com</span>
+          </a>
+        </div>
+      </section>
 
-      <a class="link" href="https://www.b2bvenues.com" target="_blank" rel="noopener">
-        <img class="logo" src="b2bvenues.png" alt="B2B Venues" loading="lazy">
-        <span class="sub">b2bvenues.com</span>
-      </a>
+      <section class="group">
+        <h2 class="group-title">Tech &amp; domotique</h2>
+        <div class="row">
+          <a class="link" href="https://www.decryptage-tech.com" target="_blank" rel="noopener">
+            <img class="logo" src="decryptage-tech.png" alt="Décryptage Tech" loading="lazy">
+            <span class="sub">decryptage-tech.com</span>
+          </a>
+          <a class="link" href="https://www.domatch.fr" target="_blank" rel="noopener">
+            <img class="logo" src="domatch.png" alt="Domatch" loading="lazy">
+            <span class="sub">domatch.fr</span>
+          </a>
+        </div>
+      </section>
 
-      <a class="link" href="https://www.stay-with-bailey.com" target="_blank" rel="noopener">
-        <img class="logo" src="staywithbailey.png" alt="Stay with Bailey" loading="lazy">
-        <span class="sub">stay-with-bailey.com</span>
-      </a>
+      <section class="group">
+        <h2 class="group-title">Voyager avec son chien</h2>
+        <div class="row">
+          <a class="link" href="https://www.lechienvoyageur.com" target="_blank" rel="noopener">
+            <img class="logo" src="lechienvoyageur.png" alt="Le Chien Voyageur" loading="lazy">
+            <span class="sub">lechienvoyageur.com</span>
+          </a>
+          <a class="link" href="https://www.mydogcanfly.com" target="_blank" rel="noopener">
+            <img class="logo" src="mydogcanfly.png" alt="My Dog Can Fly" loading="lazy">
+            <span class="sub">mydogcanfly.com</span>
+          </a>
+        </div>
+      </section>
 
-      <a class="link" href="https://www.decryptage-tech.com" target="_blank" rel="noopener">
-        <img class="logo" src="decryptage-tech.png" alt="Décryptage Tech" loading="lazy">
-        <span class="sub">decryptage-tech.com</span>
-      </a>
-
-      <a class="link" href="https://www.domatch.fr" target="_blank" rel="noopener">
-        <img class="logo" src="domatch.png" alt="Domatch" loading="lazy">
-        <span class="sub">domatch.fr</span>
-      </a>
-
-      <a class="link" href="https://www.alerte-canicule.com" target="_blank" rel="noopener">
-        <img class="logo" src="alerte-canicule.png" alt="Alerte Canicule" loading="lazy">
-        <span class="sub">alerte-canicule.com</span>
-      </a>
-
-      <a class="link" href="https://www.lechienvoyageur.com" target="_blank" rel="noopener">
-        <img class="logo" src="lechienvoyageur.png" alt="Le Chien Voyageur" loading="lazy">
-        <span class="sub">lechienvoyageur.com</span>
-      </a>
-
-      <a class="link" href="https://www.mydogcanfly.com" target="_blank" rel="noopener">
-        <img class="logo" src="mydogcanfly.png" alt="My Dog Can Fly" loading="lazy">
-        <span class="sub">mydogcanfly.com</span>
-      </a>
-    </nav>
+      <section class="group">
+        <h2 class="group-title">Chiens &amp; bien-être animal</h2>
+        <div class="row">
+          <a class="link" href="https://www.stay-with-bailey.com" target="_blank" rel="noopener">
+            <img class="logo" src="staywithbailey.png" alt="Stay with Bailey" loading="lazy">
+            <span class="sub">stay-with-bailey.com</span>
+          </a>
+          <a class="link" href="https://www.alerte-canicule.com" target="_blank" rel="noopener">
+            <img class="logo" src="alerte-canicule.png" alt="Alerte Canicule" loading="lazy">
+            <span class="sub">alerte-canicule.com</span>
+          </a>
+        </div>
+      </section>
+    </div>
 
     <footer>© 2026 Philippe</footer>
   </main>
