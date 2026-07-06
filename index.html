@@ -67,47 +67,35 @@
       gap: 12px;
     }
     a.link {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 14px 18px;
+      display: block;
+      background: #ffffff;
+      border: 1px solid #e6e6e1;
+      border-radius: 16px;
+      padding: 20px 22px;
       text-decoration: none;
-      color: var(--text);
-      font-size: 16px;
-      font-weight: 500;
-      text-align: left;
-      transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
     }
     a.link:hover {
-      background: var(--hover);
       transform: translateY(-2px);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+      border-color: #d4d4cd;
     }
-    a.link .logo-wrap {
-      width: 46px;
-      height: 32px;
-      flex-shrink: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    a.link img.favicon {
-      max-width: 46px;
-      max-height: 32px;
+    a.link img.logo {
+      display: block;
+      margin: 0 auto;
+      max-width: 84%;
+      max-height: 62px;
       width: auto;
       height: auto;
       object-fit: contain;
-      border-radius: 4px;
     }
-    a.link .label { display: flex; flex-direction: column; }
     a.link .sub {
-      font-size: 13px;
-      color: var(--muted);
-      font-weight: 400;
-      margin-top: 2px;
+      display: block;
+      margin-top: 12px;
+      font-size: 12.5px;
+      color: #8a8a8a;
+      letter-spacing: 0.02em;
     }
     footer {
       margin-top: 40px;
@@ -143,43 +131,43 @@
       <!-- ================================================= -->
 
       <a class="link" href="https://www.eyeshot.fr" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://www.eyeshot.fr/assets/images/logo-e-100x101.png" alt="Eyeshot" loading="lazy"></span>
-        <span class="label">Eyeshot<span class="sub">eyeshot.fr</span></span>
+        <img class="logo" src="eyeshot.png" alt="Eyeshot" loading="lazy">
+        <span class="sub">eyeshot.fr</span>
       </a>
 
       <a class="link" href="https://www.b2bvenues.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://www.b2bvenues.com/assets/images/logo.png" alt="B2B Venues" loading="lazy"></span>
-        <span class="label">B2B Venues<span class="sub">b2bvenues.com</span></span>
+        <img class="logo" src="b2bvenues.png" alt="B2B Venues" loading="lazy">
+        <span class="sub">b2bvenues.com</span>
       </a>
 
       <a class="link" href="https://www.stay-with-bailey.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://www.stay-with-bailey.com/images/logo_bailey.jpg" alt="Stay with Bailey" loading="lazy"></span>
-        <span class="label">Stay with Bailey<span class="sub">stay-with-bailey.com</span></span>
+        <img class="logo" src="staywithbailey.png" alt="Stay with Bailey" loading="lazy">
+        <span class="sub">stay-with-bailey.com</span>
       </a>
 
       <a class="link" href="https://www.decryptage-tech.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://decryptage-tech.com/content/images/2026/06/logo-final-decryptage-lite.png" alt="Décryptage Tech" loading="lazy"></span>
-        <span class="label">Décryptage Tech<span class="sub">decryptage-tech.com</span></span>
+        <img class="logo" src="decryptage-tech.png" alt="Décryptage Tech" loading="lazy">
+        <span class="sub">decryptage-tech.com</span>
       </a>
 
       <a class="link" href="https://www.domatch.fr" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://domatch.fr/logo.png" alt="Domatch" loading="lazy"></span>
-        <span class="label">Domatch<span class="sub">domatch.fr</span></span>
+        <img class="logo" src="domatch.png" alt="Domatch" loading="lazy">
+        <span class="sub">domatch.fr</span>
       </a>
 
       <a class="link" href="https://www.alerte-canicule.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://alerte-canicule.com/favicon.svg" alt="Alerte Canicule" loading="lazy"></span>
-        <span class="label">Alerte Canicule<span class="sub">alerte-canicule.com</span></span>
+        <img class="logo" src="alerte-canicule.png" alt="Alerte Canicule" loading="lazy">
+        <span class="sub">alerte-canicule.com</span>
       </a>
 
       <a class="link" href="https://www.lechienvoyageur.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://lechienvoyageur.com/images/lechienvoyageur_slogan_services.png" alt="Le Chien Voyageur" loading="lazy"></span>
-        <span class="label">Le Chien Voyageur<span class="sub">lechienvoyageur.com</span></span>
+        <img class="logo" src="lechienvoyageur.png" alt="Le Chien Voyageur" loading="lazy">
+        <span class="sub">lechienvoyageur.com</span>
       </a>
 
       <a class="link" href="https://www.mydogcanfly.com" target="_blank" rel="noopener">
-        <span class="logo-wrap"><img class="favicon" src="https://mydogcanfly.com/images/apple-touch-icon.png" alt="My Dog Can Fly" loading="lazy"></span>
-        <span class="label">My Dog Can Fly<span class="sub">mydogcanfly.com</span></span>
+        <img class="logo" src="mydogcanfly.png" alt="My Dog Can Fly" loading="lazy">
+        <span class="sub">mydogcanfly.com</span>
       </a>
     </nav>
 
